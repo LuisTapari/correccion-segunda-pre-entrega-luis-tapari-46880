@@ -1,0 +1,59 @@
+header{
+    width: 100%;
+    background-color: $bg-fondo;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 1000;
+    .nav-wrapper{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        nav{
+            @include flex(row, wrap,space-between,center,none);
+            background-color: $bg-fondo;
+            .header-1{
+                @include flex(row, nowrap, center, center,1.25rem);
+                h1{
+                    @include text(center, 700, map-get($font-size,5), uppercase);
+                    color: $color-rosa;
+                }
+            }
+            .menu{
+                .navbar-1{
+                    @include flex(row, nowrap, space-evenly, center, .625rem);
+                    padding-top: 1rem;
+                }
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 1.25rem;
+                li{
+                    &:hover{
+                        transform: scale(1.4)
+                    }
+                    a{
+                        @include text(none, 300, 1rem, none);
+                        color: $color-blanco;
+                        text-decoration: none;
+                        transition: text-decoration 1s, color 2s;
+                        &:hover{
+                            color: $color-rosa;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            #toggle, label{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+
