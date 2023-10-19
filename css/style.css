@@ -30,9 +30,10 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        gap: 1.25rem; }
+        gap: 1.25rem;
+        width: 30%; }
         header .nav-wrapper nav .header-1 h1 {
           font-family: 'Dosis', sans-serif;
           text-align: center;
@@ -40,32 +41,36 @@ header {
           font-size: 1.5rem;
           text-transform: uppercase;
           color: #F23869; }
-      header .nav-wrapper nav .menu .navbar-1 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 0.625rem;
-        padding-top: 1rem; }
-      header .nav-wrapper nav ul {
-        list-style: none;
-        display: flex;
-        gap: 1.25rem; }
-        header .nav-wrapper nav ul li:hover {
-          transform: scale(1.4); }
-        header .nav-wrapper nav ul li a {
-          font-family: 'Dosis', sans-serif;
-          text-align: none;
-          font-weight: 300;
-          font-size: 1rem;
-          text-transform: none;
-          color: white;
-          text-decoration: none;
-          transition: text-decoration 1s, color 2s; }
-          header .nav-wrapper nav ul li a:hover {
-            color: #F23869;
-            text-decoration: underline; }
+      header .nav-wrapper nav .menu {
+        width: 70%;
+        height: auto;
+        overflow: hidden; }
+        header .nav-wrapper nav .menu .navbar-1 {
+          padding-top: 1rem;
+          width: 100%; }
+          header .nav-wrapper nav .menu .navbar-1 ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0.625rem;
+            gap: 1.25rem; }
+            header .nav-wrapper nav .menu .navbar-1 ul li:hover {
+              transform: scale(1.4); }
+            header .nav-wrapper nav .menu .navbar-1 ul li a {
+              font-family: 'Dosis', sans-serif;
+              text-align: none;
+              font-weight: 300;
+              font-size: 1rem;
+              text-transform: none;
+              color: white;
+              text-decoration: none;
+              transition: text-decoration 1s, color 2s; }
+              header .nav-wrapper nav .menu .navbar-1 ul li a:hover {
+                color: #F23869;
+                text-decoration: underline; }
       header .nav-wrapper nav #toggle, header .nav-wrapper nav label {
         display: none; }
 
@@ -890,7 +895,7 @@ footer {
 
 /* en cuarto lugar, los elementos de components*/
 /* por ultimo, los elementos de mediaquery*/
-@media (min-width: 425px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .main-about-us {
     flex-direction: column;
     align-items: center;
@@ -905,14 +910,16 @@ footer {
     text-transform: none; }
   .main-about-us-3 ul {
     flex-direction: column; }
+  header .nav-wrapper nav .header-1 h1 {
+    display: none; }
   header .nav-wrapper nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden; }
-  header .nav-wrapper nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0px; }
+    header .nav-wrapper nav .menu ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem 0px; }
   header .nav-wrapper nav label {
     display: flex;
     color: white;

@@ -13,34 +13,38 @@ header{
             @include flex(row, wrap,space-between,center,none);
             background-color: $bg-fondo;
             .header-1{
-                @include flex(row, nowrap, center, center,1.25rem);
+                @include flex(row, nowrap, flex-start, center,1.25rem);
+                width: 30%;
                 h1{
                     @include text(center, 700, map-get($font-size,5), uppercase);
                     color: $color-rosa;
                 }
             }
             .menu{
+                width: 70%;
+                height: auto;
+                overflow: hidden;
                 .navbar-1{
-                    @include flex(row, nowrap, space-evenly, center, .625rem);
                     padding-top: 1rem;
-                }
-            }
-            ul{
-                list-style: none;
-                display: flex;
-                gap: 1.25rem;
-                li{
-                    &:hover{
-                        transform: scale(1.4)
-                    }
-                    a{
-                        @include text(none, 300, 1rem, none);
-                        color: $color-blanco;
-                        text-decoration: none;
-                        transition: text-decoration 1s, color 2s;
-                        &:hover{
-                            color: $color-rosa;
-                            text-decoration: underline;
+                    width: 100%;
+                    ul{
+                        list-style: none;
+                        @include flex(row, nowrap, flex-end, center, .625rem);
+                        gap: 1.25rem;
+                        li{
+                            &:hover{
+                                transform: scale(1.4)
+                            }
+                            a{
+                                @include text(none, 300, 1rem, none);
+                                color: $color-blanco;
+                                text-decoration: none;
+                                transition: text-decoration 1s, color 2s;
+                                &:hover{
+                                    color: $color-rosa;
+                                    text-decoration: underline;
+                                }
+                            }
                         }
                     }
                 }
