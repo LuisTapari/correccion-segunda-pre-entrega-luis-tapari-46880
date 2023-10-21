@@ -27,10 +27,13 @@ header{
                 width: 100%;
                 height: 0;                
                 overflow: hidden;
-                ul{
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 0.5rem 0px;
+                .navbar-1{
+                    ul{
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        padding: 0.5rem 0px;
+                    }
                 }
             }
             label{

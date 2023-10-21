@@ -43,9 +43,11 @@ main{
     }
 }
 .main-about-us-2{
-    h2{
+    .tittle-we{
+        h2{
         font-size: map-get($font-size,5);
     }
+}
 }
 .meet{
     h2{

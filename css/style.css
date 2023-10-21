@@ -393,14 +393,14 @@ main {
       border-radius: .3125rem; }
       .filtros-tracks ul li p {
         text-align: center; }
-    .filtros-tracks ul .button-refresh button, .button-refresh .filtros-tracks ul button {
-      padding: .375rem .375rem;
-      border: 0.125rem solid #3621BF;
-      background-color: #21118C;
+  .filtros-tracks .button-filtros, .filtros-tracks .button-refresh button, .button-refresh .filtros-tracks button {
+    padding: .375rem .375rem;
+    border: 0.125rem solid #3621BF;
+    background-color: #21118C;
+    color: #F23869; }
+    .filtros-tracks .button-filtros a, .filtros-tracks .button-refresh button a, .button-refresh .filtros-tracks button a {
+      text-decoration: none;
       color: #F23869; }
-      .filtros-tracks ul .button-refresh button a, .button-refresh .filtros-tracks ul button a {
-        text-decoration: none;
-        color: #F23869; }
 
 .button-refresh {
   display: flex;
@@ -412,9 +412,6 @@ main {
   .button-refresh button {
     border-radius: 2.5rem;
     margin-bottom: 1rem; }
-    .button-refresh button a {
-      text-decoration: none;
-      color: #F23869; }
 
 .tracks-tracks {
   margin: .9375rem auto; }
@@ -737,7 +734,7 @@ main {
     font-size: 1.25rem;
     text-transform: none; }
 
-.main-about-us-2 h2 {
+.main-about-us-2 .tittle-we h2 {
   color: white;
   font-family: 'Dosis', sans-serif;
   text-align: center;
@@ -916,9 +913,10 @@ footer {
     width: 100%;
     height: 0;
     overflow: hidden; }
-    header .nav-wrapper nav .menu ul {
+    header .nav-wrapper nav .menu .navbar-1 ul {
       flex-direction: column;
       align-items: center;
+      justify-content: space-evenly;
       padding: 0.5rem 0px; }
   header .nav-wrapper nav label {
     display: flex;
@@ -1084,7 +1082,7 @@ nav #toggle:checked ~ .menu {
   .the-most-selled h2 {
     font-size: 1.25rem; } }
 
-.main-about-us-2 h2 {
+.main-about-us-2 .tittle-we h2 {
   font-size: 1.5rem; }
 
 .meet h2 {
