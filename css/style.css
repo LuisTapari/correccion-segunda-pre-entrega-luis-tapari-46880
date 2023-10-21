@@ -393,14 +393,15 @@ main {
       border-radius: .3125rem; }
       .filtros-tracks ul li p {
         text-align: center; }
-  .filtros-tracks .button-filtros, .filtros-tracks .button-refresh button, .button-refresh .filtros-tracks button {
-    padding: .375rem .375rem;
-    border: 0.125rem solid #3621BF;
-    background-color: #21118C;
+
+.button-filtros, .button-refresh button {
+  padding: .375rem .375rem;
+  border: 0.125rem solid #3621BF;
+  background-color: #21118C;
+  color: #F23869; }
+  .button-filtros a, .button-refresh button a {
+    text-decoration: none;
     color: #F23869; }
-    .filtros-tracks .button-filtros a, .filtros-tracks .button-refresh button a, .button-refresh .filtros-tracks button a {
-      text-decoration: none;
-      color: #F23869; }
 
 .button-refresh {
   display: flex;
@@ -540,15 +541,6 @@ main {
       font-size: 1.5rem;
       text-transform: uppercase;
       color: white; }
-    .main-sound .title-main-sound button {
-      padding: .725rem .725rem;
-      border: 0.125rem solid #3621BF;
-      border-radius: .625rem;
-      background-color: #21118C;
-      color: #F23869; }
-      .main-sound .title-main-sound button a {
-        text-decoration: none;
-        color: #F23869; }
   .main-sound .explore-sound {
     margin-bottom: 1rem;
     width: 100%; }
@@ -567,6 +559,16 @@ main {
         .main-sound .explore-sound ul li:hover {
           filter: grayscale(0);
           box-shadow: 0px 0.625rem 1.25rem #F23869; }
+
+.button-sound, .main-sound-2 ul button {
+  padding: .725rem .725rem;
+  border: 0.125rem solid #3621BF;
+  border-radius: .625rem;
+  background-color: #21118C;
+  color: #F23869; }
+  .button-sound a, .main-sound-2 ul button a {
+    text-decoration: none;
+    color: #F23869; }
 
 .main-sound-2 {
   border: 1px solid white;
@@ -593,14 +595,7 @@ main {
       border-radius: 1rem;
       list-style: none; }
     .main-sound-2 ul button {
-      padding: .375rem .375rem;
-      border: 0.125rem solid #3621BF;
-      border-radius: .625rem;
-      background-color: #21118C;
-      color: #F23869; }
-      .main-sound-2 ul button a {
-        text-decoration: none;
-        color: #F23869; }
+      padding: .375rem .375rem; }
 
 .filtro-busqueda {
   margin: .9375rem auto; }
